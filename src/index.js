@@ -17,6 +17,8 @@ const div = document.createElement('div')
 div.classList.add('flex-div')
 div.appendChild(home())
 content.appendChild(div)
+const selectHome = document.querySelector('li')
+selectHome.classList.add('active')
 
 const li = document.querySelectorAll('li')
 li.forEach((item) => {
