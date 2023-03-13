@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('https://eckben.github.io/bearysBreakfastBar/img/643.png');
+  }
+  
+  nav {
+    padding-top: 10px;
+    background-color: #ffde73;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  li {
+    border: 1px solid black;
+    border-bottom: none;
+    padding-block: 20px;
+    text-align: center;
+    width: 98px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  li:hover,
+  li.active {
+    background-color: rgb(236, 164, 59);
+  }
+  
+  img {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: -40px;
+    left: -2%;
+  }
+  
+  li:hover img,
+  li.active img {
+    display: block;
+  }
+
+  .flex-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 20px;
+    background-color: #ffde73;
+    margin-block: 20px;
+    margin-inline: 100px;
+    border: none;
+    border-radius: 20px;
+  }
+  
