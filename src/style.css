@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Yusei Magic';
+  src: url(./YuseiMagic-Regular.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +10,7 @@
   
   body {
     background-image: url('https://eckben.github.io/bearysBreakfastBar/img/643.png');
+    font-family: 'Yusei Magic';
   }
   
   nav {
@@ -34,6 +39,7 @@
   li:hover,
   li.active {
     background-color: rgb(236, 164, 59);
+    cursor: pointer;
   }
   
   img {
@@ -50,16 +56,55 @@
   }
 
   .flex-div{
+    padding: 20px;
+    background-color: #ffde73;
+    margin-block: 20px;
+    margin-inline: auto;
+    border: none;
+    border-radius: 20px;
+    max-width: 810px;
+  }
+  .blocks-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: space-around;
     align-items: center;
-    padding-block: 20px;
-    background-color: #ffde73;
-    margin-block: 20px;
-    margin-inline: 100px;
-    border: none;
-    border-radius: 20px;
   }
-  
+  .outer-block{
+    padding: 20px;
+    clip-path: polygon( 0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+    background-color: #c16a08;
+}
+
+  .inner-block {
+    background-color: #FFC60B;
+    padding: 20px;
+    clip-path: polygon( 0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%);
+    max-width: 550px;
+    min-width: 450px;
+}
+.text-center{
+  text-align: center;
+}
+.bee-nest,.comb-nest{
+  position: relative;
+}
+.bee1,.bee2,.comb{
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.bee1{
+  top: 15%;
+  left: 2%;
+}
+.bee2{
+  top: 15%;
+  left: 87%;
+  transform: rotate(100deg);
+}
+.comb{
+  top: 1%;
+  left: 44%;
+}
