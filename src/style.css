@@ -111,7 +111,7 @@
 .img-container{
   position: relative;
 }
-.product-image{
+.product-image,.product-image-contact{
   display: block;
   width: 250px;
   height: 250px;
@@ -124,4 +124,7 @@
 .inner-block-img{
   padding: 30px;
   height: 400px;
+}
+.product-image-contact{
+  left: 22%;
 }
