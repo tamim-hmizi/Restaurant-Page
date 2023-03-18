@@ -108,3 +108,20 @@
   top: 1%;
   left: 44%;
 }
+.img-container{
+  position: relative;
+}
+.product-image{
+  display: block;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  border: 5px solid #c16a08;
+  border-radius: 30px;
+}
+.inner-block-img{
+  padding: 30px;
+  height: 400px;
+}
