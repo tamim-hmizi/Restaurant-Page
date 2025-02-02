@@ -1,32 +1,32 @@
 @font-face {
-  font-family: 'Yusei Magic';
-  src: url(./YuseiMagic-Regular.ttf);
+    font-family: 'Yusei Magic';
+    src: url(./YuseiMagic-Regular.ttf);
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    background-image: url('https://eckben.github.io/bearysBreakfastBar/img/643.png');
+}
+
+body {
+    background-image: url('https://web.archive.org/web/20230323212405im_/https://eckben.github.io/bearysBreakfastBar/img/643.png');
     font-family: 'Yusei Magic';
-  }
-  
-  nav {
+}
+
+nav {
     padding-top: 10px;
     background-color: #ffde73;
-  }
-  
-  ul {
+}
+
+ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     list-style: none;
-  }
-  
-  li {
+}
+
+li {
     border: 1px solid black;
     border-bottom: none;
     padding-block: 20px;
@@ -34,28 +34,28 @@
     width: 98px;
     border-radius: 5px;
     position: relative;
-  }
-  
-  li:hover,
-  li.active {
+}
+
+li:hover,
+li.active {
     background-color: rgb(236, 164, 59);
     cursor: pointer;
-  }
-  
-  img {
+}
+
+img {
     display: none;
     position: absolute;
     z-index: 1;
     bottom: -40px;
     left: -2%;
-  }
-  
-  li:hover img,
-  li.active img {
-    display: block;
-  }
+}
 
-  .flex-div{
+li:hover img,
+li.active img {
+    display: block;
+}
+
+.flex-div {
     padding: 20px;
     background-color: #ffde73;
     margin-block: 20px;
@@ -63,68 +63,90 @@
     border: none;
     border-radius: 20px;
     max-width: 810px;
-  }
-  .blocks-container{
+}
+.blocks-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-  }
-  .outer-block{
+}
+.outer-block {
     padding: 20px;
-    clip-path: polygon( 0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+    clip-path: polygon(
+        0 21%,
+        11% 0,
+        89% 0,
+        100% 21%,
+        100% 79%,
+        89% 100%,
+        11% 100%,
+        0 79%
+    );
     background-color: #c16a08;
 }
 
-  .inner-block {
-    background-color: #FFC60B;
+.inner-block {
+    background-color: #ffc60b;
     padding: 20px;
-    clip-path: polygon( 0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%);
+    clip-path: polygon(
+        0 20%,
+        10% 0,
+        90% 0,
+        100% 20%,
+        100% 80%,
+        90% 100%,
+        10% 100%,
+        0 80%
+    );
     max-width: 550px;
     min-width: 450px;
 }
-.text-center{
-  text-align: center;
+.text-center {
+    text-align: center;
 }
-.bee-nest,.comb-nest{
-  position: relative;
+.bee-nest,
+.comb-nest {
+    position: relative;
 }
-.bee1,.bee2,.comb{
-  display: block;
-  width: 50px;
-  height: 50px;
-  position: absolute;
+.bee1,
+.bee2,
+.comb {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
 }
-.bee1{
-  top: 15%;
-  left: 2%;
+.bee1 {
+    top: 15%;
+    left: 2%;
 }
-.bee2{
-  top: 15%;
-  left: 87%;
-  transform: rotate(100deg);
+.bee2 {
+    top: 15%;
+    left: 87%;
+    transform: rotate(100deg);
 }
-.comb{
-  top: 1%;
-  left: 44%;
+.comb {
+    top: 1%;
+    left: 44%;
 }
-.img-container{
-  position: relative;
+.img-container {
+    position: relative;
 }
-.product-image,.product-image-contact{
-  display: block;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  left: 40%;
-  top: 35%;
-  border: 5px solid #c16a08;
-  border-radius: 30px;
+.product-image,
+.product-image-contact {
+    display: block;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    border: 5px solid #c16a08;
+    border-radius: 30px;
 }
-.inner-block-img{
-  padding: 30px;
-  height: 400px;
+.inner-block-img {
+    padding: 30px;
+    height: 400px;
 }
-.product-image-contact{
-  left: 22%;
+.product-image-contact {
+    left: 22%;
 }
